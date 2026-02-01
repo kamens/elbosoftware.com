@@ -20,12 +20,16 @@
 	}
 
 	.container {
-		text-align: center;
 		padding-top: 100px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 50px;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
 	}
 
 	.header {
@@ -35,32 +39,26 @@
 	.offerings {
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
-	}
-
-	.offering {
-		text-wrap: balance;
+		gap: 16px;
 	}
 
 	.tagline {
 		font-size: 18px;
 		color: #666;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 </style>
 <body>
 	<div class="container">
-		<div class="header">Elbo Software</div>
-		<div class="offerings">
-			<div class="offering">
-				<a href="https://elbobooks.com">Elbo Books</a>, AI-built personalized activity books
+		<div class="content">
+			<div class="header">Elbo Software</div>
+			<div class="offerings">
+				<div><a href="https://elbobooks.com">Elbo Books</a>, AI-built personalized activity books</div>
+				<div><a href="mailto:ben@elbosoftware.com">1:1 coaching</a> for technical founders & leaders</div>
 			</div>
-			<div class="offering">
-				<a href="mailto:ben@elbosoftware.com">1:1 coaching</a> for technical founders & leaders
+			<div class="tagline">
+				A family business by <a href="https://kamens.com">Ben Kamens</a> and crew
 			</div>
-		</div>
-		<div class="tagline">
-			A family business by <a href="https://kamens.com">Ben Kamens</a> and crew
 		</div>
 	</div>
 </body>
