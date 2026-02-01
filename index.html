@@ -12,27 +12,55 @@
 		font-weight: 400;
 		font-style: normal;
 		font-size: 24px;
+		color: #1a1a1a;
+	}
+
+	a {
+		color: #1a1a1a;
 	}
 
 	.container {
 		text-align: center;
-		padding-top: 120px;
+		padding-top: 100px;
 		display: flex;
 		flex-direction: column;
-		gap: 40px;
+		align-items: center;
+		gap: 50px;
 	}
 
-	.phrase {
+	.header {
+		font-size: 32px;
+	}
+
+	.offerings {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.offering {
 		text-wrap: balance;
+	}
+
+	.tagline {
+		font-size: 18px;
+		color: #666;
+		margin-top: 20px;
 	}
 </style>
 <body>
 	<div class="container">
-		<div class="phrase">
-			We make <a href="https://elbobooks.com">Elbo Books</a>, the world's most personalized activity books!
+		<div class="header">Elbo Software</div>
+		<div class="offerings">
+			<div class="offering">
+				<a href="https://elbobooks.com">Elbo Books</a>, AI-built personalized activity books
+			</div>
+			<div class="offering">
+				<a href="mailto:ben@elbosoftware.com">1:1 coaching</a> for technical founders & leaders
+			</div>
 		</div>
-		<div class="phrase">
-			Elbo Software is a family business by <a href="https://kamens.com">Ben Kamens</a> and crew.
+		<div class="tagline">
+			A family business by <a href="https://kamens.com">Ben Kamens</a> and crew
 		</div>
 	</div>
 </body>
