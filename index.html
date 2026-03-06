@@ -33,6 +33,12 @@
 		gap: 40px;
 	}
 
+	.content-header {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
 	.header {
 		font-size: 32px;
 	}
@@ -46,20 +52,21 @@
 	.tagline {
 		font-size: 18px;
 		color: #666;
-		margin-top: 10px;
 	}
 </style>
 <body>
 	<div class="container">
 		<div class="content">
-			<div class="header">Elbo Software</div>
+			<div class="content-header">
+				<div class="header">Elbo Software</div>
+				<div class="tagline">
+					A family business by <a href="https://kamens.com">Ben Kamens</a> and crew
+				</div>
+			</div>
 			<div class="offerings">
 				<div><a href="https://elbobooks.com">Elbo Books</a>, AI-built personalized activity books</div>
 				<div><a href="https://murderboards.ai">MurderBoards</a>, panels of AI agents debate your work to make it great</div>
 				<div><a href="mailto:ben@elbosoftware.com">1:1 coaching</a> for technical founders & leaders</div>
-			</div>
-			<div class="tagline">
-				A family business by <a href="https://kamens.com">Ben Kamens</a> and crew
 			</div>
 		</div>
 	</div>
