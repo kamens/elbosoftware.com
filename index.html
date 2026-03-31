@@ -22,10 +22,21 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  html:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(to right,
+      hsla(40, 1%, 90%, 0.88),
+      hsla(-46, 5%, 98%, 0.88)
+    );
+  }
+
   body {
     font-family: 'Newsreader', serif;
     font-weight: 300;
-    background: #fff;
+    background: transparent;
     color: #000;
     min-height: 100vh;
     display: flex;
@@ -33,6 +44,8 @@
     justify-content: center;
     align-items: center;
     padding: 48px 24px;
+    overflow: scroll;
+    position: relative;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -55,14 +68,16 @@
     line-height: 1.6;
   }
 
-  .tagline a {
+  a,
+  a:visited {
     color: #4F6E7D;
-    text-decoration: underline;
-    text-decoration-color: #b3c5cd;
-    text-underline-offset: 3px;
+    text-decoration: none;
   }
-  .tagline a:hover {
-    text-decoration-color: #4F6E7D;
+
+  a:hover,
+  a:active {
+    color: #0000A8;
+    text-decoration: underline;
   }
 
   .section-label {
@@ -80,13 +95,7 @@
 
   .item a {
     font-size: 18px;
-    font-weight: 500;
-    color: #000;
-    text-decoration: none;
-    transition: color 0.15s;
-  }
-  .item a:hover {
-    color: #4F6E7D;
+    font-weight: 300;
   }
 
   .item .desc {
@@ -107,14 +116,8 @@
   }
 
   .work-link a {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
-    color: #4F6E7D;
-    text-decoration: none;
-    transition: opacity 0.15s;
-  }
-  .work-link a:hover {
-    opacity: 0.7;
   }
   .work-link a span {
     margin-left: 4px;
@@ -123,15 +126,6 @@
   .footer {
     margin-top: 56px;
     font-size: 14px;
-    color: #999;
-  }
-
-  .footer a {
-    color: #999;
-    text-decoration: none;
-  }
-  .footer a:hover {
-    color: #4F6E7D;
   }
 </style>
 </head>
