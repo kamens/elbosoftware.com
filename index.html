@@ -1,74 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Elbo Software</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elbo Software</title>
 <style>
-	body {
-		font-family: "Instrument Serif", serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 24px;
-		color: #1a1a1a;
-	}
+  @font-face {
+    font-family: 'Newsreader';
+    src: url('/fonts/Newsreader-VariableFont_opsz,wght.woff2') format('woff2');
+    font-weight: 200 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Newsreader';
+    src: url('/fonts/Newsreader-Italic-VariableFont_opsz,wght.woff2') format('woff2');
+    font-weight: 200 800;
+    font-style: italic;
+    font-display: swap;
+  }
 
-	a {
-		color: #1a1a1a;
-	}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-	.container {
-		padding-top: 100px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+  body {
+    font-family: 'Newsreader', serif;
+    font-weight: 300;
+    background: #fff;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 24px;
+    -webkit-font-smoothing: antialiased;
+  }
 
-	.content {
-		display: flex;
-		flex-direction: column;
-		gap: 40px;
-	}
+  .card {
+    max-width: 480px;
+    width: 100%;
+  }
 
-	.content-header {
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-	}
+  h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+  }
 
-	.header {
-		font-size: 32px;
-	}
+  .tagline {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 48px;
+    line-height: 1.6;
+  }
 
-	.offerings {
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
-	}
+  .tagline a {
+    color: #4F6E7D;
+    text-decoration: underline;
+    text-decoration-color: #b3c5cd;
+    text-underline-offset: 3px;
+  }
+  .tagline a:hover {
+    text-decoration-color: #4F6E7D;
+  }
 
-	.tagline {
-		font-size: 18px;
-		color: #666;
-	}
+  .section-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .item {
+    margin-bottom: 20px;
+  }
+
+  .item a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .item a:hover {
+    color: #4F6E7D;
+  }
+
+  .item .desc {
+    font-size: 15px;
+    color: #666;
+    margin-top: 2px;
+  }
+
+  .divider {
+    width: 32px;
+    height: 1px;
+    background: #ddd;
+    margin: 36px 0;
+  }
+
+  .work-link {
+    margin-bottom: 0;
+  }
+
+  .work-link a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #4F6E7D;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+  .work-link a:hover {
+    opacity: 0.7;
+  }
+  .work-link a span {
+    margin-left: 4px;
+  }
+
+  .footer {
+    margin-top: 56px;
+    font-size: 14px;
+    color: #999;
+  }
+
+  .footer a {
+    color: #999;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: #4F6E7D;
+  }
 </style>
+</head>
 <body>
-	<div class="container">
-		<div class="content">
-			<div class="content-header">
-				<div class="header">Elbo Software</div>
-				<div class="tagline">
-					A family business by <a href="https://kamens.com">Ben Kamens</a>, his crew, and our AI teammates
-				</div>
-			</div>
-			<div class="offerings">
-				<div><a href="https://elbobooks.com">Elbo Books</a>, AI-built personalized activity books</div>
-				<div><a href="https://murderboards.ai">MurderBoards</a>, panels of AI agents debate your work to make it great</div>
-				<div><a href="mailto:ben@elbosoftware.com">1:1 coaching</a> for technical founders & leaders</div>
-			</div>
-		</div>
-	</div>
+  <div class="card">
+    <h1>Elbo Software</h1>
+    <div class="tagline">A family software company by <a href="https://kamens.com">Ben Kamens</a>.</div>
+
+    <div class="section-label">Products</div>
+    <div class="item">
+      <a href="https://elbobooks.com">Elbo Books</a>
+      <div class="desc">AI-personalized activity books for kids</div>
+    </div>
+    <div class="item">
+      <a href="https://murderboards.ai">MurderBoards</a>
+      <div class="desc">AI agent panels that debate your work</div>
+    </div>
+    <div class="item">
+      <a href="https://kamens.com/projects">+ more agents, skills, and experiments</a>
+      <div class="desc">Shipping the AI tools that I use daily</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section-label">Work with Ben</div>
+    <div class="work-link">
+      <a href="https://kamens.com/work-with-me">AI coaching, strategy, and hands-on projects<span>&rarr;</span></a>
+    </div>
+
+    <div class="footer">
+      <a href="mailto:ben@elbosoftware.com">ben@elbosoftware.com</a>
+    </div>
+  </div>
 </body>
 </html>
